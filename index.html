@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Màn hình nhập mật khẩu -->
+    <div class="login-screen active">
+        <img class="login-img" src="img/anh.jpg" alt="">
+        <h2>Nhập ngày sinh của Em yêu 💖</h2>
+        <input type="password" id="password" placeholder="Yêu Em">
+        <button onclick="checkPassword()">Vào xem 🎁</button>
+        <p id="error-msg"></p> <!-- Thông báo dễ thương -->
+    </div>
+
+    <!-- Màn hình chúc mừng -->
+    <div class="birthday-screen" id="birthdayScreen">
+        <div class="birthday_asb">
+            <h1>🎉 Chúc mừng sinh nhật Em yêu <span class="heart">❤️</span></h1>
+            <div class="letter">
+                Gửi đến người con gái anh thương, <br><br>
+                Hôm nay là ngày thật đặc biệt, ngày mà một thiên thần ra đời 💕.  
+                Anh chúc em luôn vui vẻ, xinh đẹp, hạnh phúc và mãi mãi bên anh.  
+                Mong rằng mọi điều tốt đẹp nhất sẽ đến với em trong tuổi mới này.  
+            <br><br>
+            Yêu em nhiều lắm! 💖
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+        </div>
+        <div class="galleryy">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+        </div>
+        <div class="gallery">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+        </div>
+        <div class="galleryy">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+        </div>
+        <div class="gallery">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 1">
+            <img src="img/anh.jpg" alt="ảnh 2">
+            <img src="img/anh.jpg" alt="ảnh 3">
+            <img src="img/anh.jpg" alt="ảnh 4">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+            <img src="img/anh.jpg" alt="ảnh 5">
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = "28102005"; // đổi thành ngày sinh ny bạn
+
+        function checkPassword() {
+            const input = document.getElementById("password").value;
+            const errorMsg = document.getElementById("error-msg");
+
+            if (input === correctPassword) {
+                document.querySelector(".login-screen").classList.remove("active");
+                document.getElementById("birthdayScreen").classList.add("active");
+            } else {
+                errorMsg.textContent = "Sai rồi đó 😢 Thử lại nha cục cưng 💕";
+                errorMsg.style.animation = "shake 0.3s"; // chạy lại hiệu ứng
+                setTimeout(() => { errorMsg.style.animation = ""; }, 300);
+            }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: pink;
+    color: #d63384;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.login-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.login-screen, .birthday-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-screen.active {
+    display: flex;
+}
+.birthday-screen.active {
+    display: block;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #d63384;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff4da6;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #ff1a8c;
+}
+
+#error-msg {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff1a8c;
+    font-style: italic;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+.birthday-screen {
+    position: relative;
+}
+
+.birthday_asb {
+    position: absolute;
+    z-index: 2;
+    background-color: pink;
+    width: 1000px;
+    height: 300px;
+    border-radius: 20px;
+    top: 200px;
+}
+
+.letter {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    font-size: 20px;
+    line-height: 1.5;
+    color: #d63384;
+}
+
+.galleryy,
+.gallery {
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 20px;
+    display: inline-block;
+    animation: scroll 30s alternate infinite;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.galleryy img {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 20px;
+    display: inline-block;
+    animation: scrolll 30s alternate infinite;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@keyframes scroll {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-1000%); }
+}
+
+@keyframes scrolll {
+    from { transform: translateX(-1000%); }
+    to { transform: translateX(0%); }
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 20px;
+    color: #ff1a8c;
+}
+.heart {
+    font-size: 2em;
+    color: red;
+    animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1); }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 740px) {
+    .login-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .birthday_asb {
+        position: absolute;
+        z-index: 2;
+        background-color: pink;
+        max-width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .letter {
+        max-width: 300px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        font-size: 14px;
+        line-height: 1.5;
+        color: #d63384;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+        color: #ff1a8c;
+    }
+}
